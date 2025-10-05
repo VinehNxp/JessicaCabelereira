@@ -15,8 +15,7 @@ const filesToCache = [
   '/manifest.json',
   '/196.png',
   '/512.png',
-  '/191.png',
-  '/192.png'
+  '/191.png'
 ];
 
 self.addEventListener('install', e => {
