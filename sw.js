@@ -13,8 +13,8 @@ const filesToCache = [
   '/style.css',
   '/script.js',
   '/manifest.json',
-  '/icon-192.png',
-  '/icon-512.png'
+  '/196.png',
+  '/512.png'
 ];
 
 self.addEventListener('install', e => {
