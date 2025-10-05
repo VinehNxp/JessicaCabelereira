@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jéssica Cabeleleira</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Jéssica Cabeleleira</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#carrinho">Carrinho</a></li>
+                <li><a href="#agendamento">Agendamento</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Início -->
+    <section id="home">
+        <h2>Seja Bem-vindo</h2>
+        <p>Beleza e exclusividade em cada detalhe. Agende seu horário e descubra nossos produtos.</p>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <ul id="lista-servicos"></ul>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos">
+        <h2>Produtos</h2>
+        <ul id="lista-produtos"></ul>
+    </section>
+
+    <!-- Carrinho -->
+    <section id="carrinho">
+        <h2>Seu Carrinho</h2>
+        <ul>
+            <p>Seu carrinho está vazio.</p>
+        </ul>
+    </section>
+
+    <!-- Agendamento -->
+    <section id="agendamento">
+        <h2>Agende seu horário</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+
+            <label for="hora">Horário:</label>
+            <select id="hora" required>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+            </select>
+
+            <button type="submit">Agendar</button>
+        </form>
+    </section>
+
+    <!-- Login Admin -->
+    <section id="login-admin">
+        <h2>Login Administrativo</h2>
+        <form id="form-login">
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-senha" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="login-erro" style="color:red; display:none;">Email ou senha incorretos!</p>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Fale conosco pelo WhatsApp: <a href="https://wa.me/5544991792301" target="_blank">Clique aqui</a></p>
+        <a href="https://www.instagram.com/jessicasouza.cabeleireira/" target="_blank">
+            <img src="/assets/instagram.webp" alt="Instagram" style="width:52px;">
+        </a>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Black & Gold Beauty - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

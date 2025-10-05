@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administração - Jéssica Cabeleleira </title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Área Administrativa - Jéssica Cabeleleira</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Voltar ao Site</a></li>
+        <li><a href="#produtos-admin">Produtos</a></li>
+        <li><a href="#servicos-admin">Serviços</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Produtos Admin -->
+  <section id="produtos-admin">
+    <h2>Gerenciar Produtos</h2>
+    <form id="form-produto">
+      <input type="text" id="produto-nome" placeholder="Nome do produto" required>
+      <input type="number" id="produto-preco" placeholder="Preço" step="0.01" required>
+      <input type="file" id="produto-imagem" accept="image/*" required>
+      <img id="preview-imagem" src="" alt="Prévia do produto" style="display:none; width:150px; margin-top:10px; border-radius:8px; border:1px solid #ccc;">
+      <button type="submit">Adicionar Produto</button>
+    </form>
+
+    <h3>Produtos Adicionados</h3>
+    <ul id="lista-produtos" class="lista-itens-admin"></ul>
+  </section>
+
+  <!-- Serviços Admin -->
+  <section id="servicos-admin">
+    <h2>Gerenciar Serviços</h2>
+    <form id="form-servico">
+      <input type="text" id="servico-nome" placeholder="Nome do serviço" required>
+      <input type="number" id="servico-preco" placeholder="Preço" step="0.01" required>
+      <button type="submit">Adicionar Serviço</button>
+    </form>
+
+    <h3>Serviços Adicionados</h3>
+    <ul id="lista-servicos" class="lista-itens-admin"></ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Black & Gold Beauty - Administração</p>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+
+</html>
