@@ -221,3 +221,14 @@ formLogin.addEventListener("submit", e=>{
     window.location.href = "/pages/admin.html";
   } else { loginErro.style.display="block"; }
 });
+
+// =====================
+// Registrar Service Worker (PWA)
+// =====================
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('Service Worker registrado com sucesso!', reg))
+      .catch(err => console.error('Falha ao registrar Service Worker:', err));
+  });
+}
